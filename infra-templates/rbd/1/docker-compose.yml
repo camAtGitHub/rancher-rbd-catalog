@@ -3,9 +3,9 @@ services:
   rbd-driver:
     privileged: true
     network_mode: host
-    image: rancher/storage-rbd:v0.8.12
+    image: rancher/storage-rbd:v0.9.7
     labels:
-      io.rancher.scheduler.global: 'true'
+      io.rancher.scheduler.affinity:host_label: rbd=1
       io.rancher.container.create_agent: 'true'
       io.rancher.container.agent.role: environment
     environment:
