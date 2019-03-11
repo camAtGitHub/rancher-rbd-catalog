@@ -1,6 +1,7 @@
 ## Rancher RBD
 
-> **Note:** This item currently only supports Ceph `Jewel` version. Due to librbd compatibility with the kernel, it is recommended to use Ubuntu16.04 for host OS.
+> **Note:** v0.1.0 and v0.1.1 These items currently only supports Ceph `Jewel` version. Due to librbd compatibility with the kernel, it is recommended to use Ubuntu16.04 for host OS.  
+v0.1.2 Uses a CentOS base ceph image based on v12 Ceph. This version adds support for ceph usernames as well.
 
 ### Default Configuration
 
@@ -21,4 +22,5 @@ volumes:
     driver_opts:
       size: 2G
       pool: rbd
+      user: myDevUser
 ```
