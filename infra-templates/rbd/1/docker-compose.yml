@@ -8,6 +8,7 @@ services:
       io.rancher.scheduler.affinity:host_label: rbd=1
       io.rancher.container.create_agent: 'true'
       io.rancher.container.agent.role: environment
+      io.rancher.scheduler.global: 'true'
     environment:
       RANCHER_DEBUG: '${RANCHER_DEBUG}'
     volumes:
