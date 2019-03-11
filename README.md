@@ -24,3 +24,6 @@ volumes:
       pool: rbd
       user: myDevUser
 ```
+
+### Image Repo
+Please visit: https://github.com/camAtGitHub/rancher-storage-rbd to see the build config
